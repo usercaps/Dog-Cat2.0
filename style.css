@@ -1,0 +1,92 @@
+.dogBlock img, .catBlock img{
+    max-width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+}
+.Dog{
+    font-size: large;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: brown;
+    color: #fff;
+}
+
+.Cat{
+    font-size: large;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: yellowgreen;
+    color: #fff;
+}
+
+p{
+    text-align: center;
+    font-size: 50px;
+}
+
+.dislike img:hover{
+    width: 200%;   
+}
+
+
+.dislike{
+    max-width: 100%;
+    border: 1.5px solid black;
+    background:rgba(255, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.dislike img{
+    transition: 3s;
+    width: 50%;
+}
+
+.like{
+    max-width: 100%;
+    border: 1.5px solid black;
+    background:rgba(0, 255, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.like img{
+    width: 50%;
+    transition: 3s;
+}
+.like img:hover{
+    width: 200%;   
+}
+
+.like-dog, .like-cat{
+background: rgba(0, 255, 0, 0.5);
+transition: 3s;
+}
+.like-dog:hover, .like-cat:hover, .dislike-dog:hover, .dislike-cat:hover{
+    font-size: 30px;
+    border-radius: 10px;
+}
+.dislike-dog, .dislike-cat{
+background: red;
+transition: 3s;
+}
+
+
+.dogBlock, .buttons, .catBlock, .status{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+.status{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.block {
+    display: block;
+}
